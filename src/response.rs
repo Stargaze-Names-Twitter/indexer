@@ -34,7 +34,7 @@ pub struct Record {
 
 #[derive(Deserialize, Debug)]
 pub struct NameExtension {
-    pub image_nft: NFT,
+    pub image_nft: Option<NFT>,
     pub records: Vec<Record>,
 }
 
